@@ -41,6 +41,7 @@ google.maps.event.addDomListener(window, 'resize', function() {
 });
 
 function init() {
+    init360Banner();
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
@@ -182,4 +183,83 @@ function init() {
         map: map,
         icon: image
     });
+}
+
+
+//Three.js 360 video banner setup
+
+//Globals
+var camera, scene, renderer;
+var video, texture;
+var moveX, moveY;
+
+function init360Banner(){
+    var container = document.getElementById( '360banner' );
+
+    scene = new THREE.Scene();
+
+    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 2000 );
+    scene.add(camera);
+
+    var geometry = new THREE.SphereGeometry( 500, 60, 40 );
+    geometry.scale( - 1, 1, 1 );
+
+    video = document.createElement( 'video' );
+	video.loop = true;
+	video.muted = true;
+	video.src = '../assets/prototype.mp4';
+	video.play();
+
+    imgTex = document.createElement( 'img' );
+    // imgTex.src = '';
+    //Some sort of if statement based on platform
+
+    texture = new THREE.VideoTexture( video );
+    texture.minFilter = THREE.NearestFilter;
+	texture.maxFilter = THREE.NearestFilter;
+	texture.format = THREE.RGBFormat;
+	texture.generateMipmaps = false;
+    
+    var material = new THREE.MeshBasicMaterial( { map: texture } );
+
+    var mesh = new THREE.Mesh( geometry, material );
+
+    scene.add( mesh );
+
+	renderer = new THREE.WebGLRenderer();
+	renderer.setClearColor( 0x101010 );
+	renderer.setPixelRatio( window.devicePixelRatio );
+	renderer.setSize( window.innerWidth, window.innerHeight );
+	container.appendChild( renderer.domElement );
+
+    window.addEventListener( 'resize', onWindowResize, false );
+    window.addEventListener( 'mousemove', onMouseMove, false);
+
+    update();
+}
+
+function onMouseMove(e){
+    e.preventDefault();
+    var widthHalf = (window.innerWidth/2);
+    var heightHalf = (window.innerHeight/2);
+    moveX += e.clientX - widthHalf;
+    moveY += e.clientY - heightHalf;
+    console.log(e);
+
+}
+
+function onWindowResize() {
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+	renderer.setSize( window.innerWidth, window.innerHeight );
+}
+
+function update(){
+    requestAnimationFrame( update );
+    render();
+}
+
+function render(){
+    camera.rotation.y += 0.001;
+    renderer.render(scene, camera);
 }
