@@ -3,18 +3,39 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-body {
-  width: 100%;
-  height: 100%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: black;
-}
+
 html {
+  height: 100%;
+
+}
+
+body {
+
+  /*font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  color: #F1EEEE;
+  background-color: #000;
   width: 100%;
   height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background: #5400fc; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#5400fc, #8e01fe) fixed; /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5400fc, #8e01fe) fixed; /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5400fc, #8e01fe) fixed; /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5400fc, #8e01fe)  fixed;
+
 }
-h1,
+
+h1{
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 62px;
+}
 h2,
 h3,
 h4,
@@ -22,19 +43,43 @@ h5,
 h6 {
   margin: 0 0 35px;
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
 }
+
 p {
   margin: 0 0 25px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
+
+.icon-success {
+    color: #ff00bd;
+}
+
+.vidholder {
+  padding: 40px;
+
+}
+
+.vertical-center {
+  /* min-height: 100%;  Fallback for browsers do NOT support vh unit */
+  /* min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.aboutvillage{
+  padding: 60px 10px;
+}
+
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
   }
 }
@@ -56,7 +101,8 @@ a:focus {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   background-color: black;
 }
 .navbar-custom .navbar-toggle {
@@ -83,7 +129,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 0, 189);
   outline: none;
   background-color: transparent;
 }
@@ -96,7 +142,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgb(255, 0, 189);
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
@@ -117,11 +163,16 @@ a:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
-#360banner{
-  position: absolute;
+
+#banner360{
+/*  position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  z-index: 1 !important;
+  z-index: 1 !important;*/
+  width: 100%; height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+  /*filter: blur(5px);*/
 }
 .intro {
   z-index: 2 !important;
@@ -247,10 +298,13 @@ a:focus {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px;
+    padding-top: 80px;
   }
   .download-section {
-    padding: 100px 0;
+    padding: 80px 0;
+  }
+  .vid-section {
+    padding: 80px 0;
   }
   #map {
     height: 400px;

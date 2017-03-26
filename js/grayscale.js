@@ -37,7 +37,7 @@ var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+    // map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
 });
 
 function init() {
@@ -168,21 +168,21 @@ function init() {
         }]
     };
 
-    // Get the HTML DOM element that will contain your map
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
+    // // Get the HTML DOM element that will contain your map
+    // // We are using a div with id="map" seen below in the <body>
+    // var mapElement = document.getElementById('map');
 
-    // Create the Google Map using out element and options defined above
-    map = new google.maps.Map(mapElement, mapOptions);
+    // // Create the Google Map using out element and options defined above
+    // map = new google.maps.Map(mapElement, mapOptions);
 
-    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
-    var beachMarker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        icon: image
-    });
+    // // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
+    // var image = 'img/map-marker.png';
+    // var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    // var beachMarker = new google.maps.Marker({
+    //     position: myLatLng,
+    //     map: map,
+    //     icon: image
+    // });
 }
 
 
@@ -194,7 +194,7 @@ var video, texture;
 var moveX, moveY;
 
 function init360Banner(){
-    var container = document.getElementById( '360banner' );
+    var container = document.getElementById( 'banner360' );
 
     scene = new THREE.Scene();
 
@@ -204,13 +204,18 @@ function init360Banner(){
     var geometry = new THREE.SphereGeometry( 500, 60, 40 );
     geometry.scale( - 1, 1, 1 );
 
+    
+    
     video = document.createElement( 'video' );
+    video.src = 'https://s3.amazonaws.com/360banner/prototype.mp4';
+    video.type = "video/mp4";
 	video.loop = true;
 	video.muted = true;
-	video.src = '../assets/prototype.mp4';
-	video.play();
+	
+        video.play();
+	
 
-    imgTex = document.createElement( 'img' );
+    //imgTex = document.createElement( 'img' );
     // imgTex.src = '';
     //Some sort of if statement based on platform
 
@@ -244,7 +249,7 @@ function onMouseMove(e){
     var heightHalf = (window.innerHeight/2);
     moveX += e.clientX - widthHalf;
     moveY += e.clientY - heightHalf;
-    console.log(e);
+    // console.log(e);
 
 }
 
