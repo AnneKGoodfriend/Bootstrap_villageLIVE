@@ -207,7 +207,7 @@ function init360Banner(){
     
     
     video = document.createElement( 'video' );
-    video.src = 'http://s3.amazonaws.com/360banner/prototype.mp4';
+    video.src = "https://s3.amazonaws.com/360banner/prototype.mp4";
     video.type = "video/mp4";
 	video.loop = true;
 	video.muted = true;
