@@ -7,6 +7,14 @@
 html {
   height: 100%;
 
+  margin: 0;
+  background-repeat: no-repeat;
+  background: #5400fc; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#5400fc, #8e01fe) fixed; /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5400fc, #8e01fe) fixed; /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5400fc, #8e01fe) fixed; /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5400fc, #8e01fe)  fixed;
+
 }
 
 body {
@@ -17,14 +25,6 @@ body {
   background-color: #000;
   width: 100%;
   height: 100%;
-  margin: 0;
-  background-repeat: no-repeat;
-  background: #5400fc; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#5400fc, #8e01fe) fixed; /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#5400fc, #8e01fe) fixed; /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#5400fc, #8e01fe) fixed; /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#5400fc, #8e01fe)  fixed;
-
 }
 
 h1{
