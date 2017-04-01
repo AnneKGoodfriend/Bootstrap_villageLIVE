@@ -134,13 +134,25 @@ p {
   width: 100%;
 }*/
 
+.togglebuttonsholder{
+  margin: 10px 30px
+
+}
+
+.togglebuttons{
+  width:300px;
+  padding: 20px 20px 20px 60px;
+  line-height: 30px;
+  margin: 0px
+}
+
 .mapmarkers{
   outline:0;
 }
 
 .mapmarkers:hover{
   opacity: 0.3; 
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
 
