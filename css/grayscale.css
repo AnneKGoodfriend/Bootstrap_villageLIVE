@@ -130,6 +130,26 @@ p {
   padding: 0px 30px;
 }
 
+#vidholder1{
+    position: absolute;
+    /*top:205px;*/
+    right: -100px;
+    width: 100px;
+    height: 100px;
+}
+
+#vidholder2{
+    position: absolute;
+    /*top:205px;*/
+    right: -100px;
+    width: 100px;
+    height: 100px;
+}
+
+.vidOpen{
+
+}
+
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
