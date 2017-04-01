@@ -65,7 +65,7 @@ $(document).ready(function(){
   $("#mapbutton2").click(function(){
 	//If it's open lets close it and get rid of the class
 
-    console.log("button 1 pressed");
+    console.log("button 2 pressed");
 
 
 	if($("#vidholder2").hasClass("vidOpen")){
