@@ -14,10 +14,12 @@ $(document).ready(function(){
     $("#mapbutton1").click(function(){
     	//If it's open lets close it and get rid of the class
 
+    console.log("button 1 pressed");
+
     	if($("#vidholder1").hasClass("vidOpen")){
     		$("#vidholder1").animate({
     			//animate out
-    			right: "-100px"
+    			right: "-1000px"
     		}, 500);
     			//Get rid of class
     		$("#vidholder1").removeClass("vidOpen");
@@ -30,7 +32,7 @@ $(document).ready(function(){
     			
 	  			$("#vidholder2").animate({
     			//animate out
-    			right: "-100px"
+    			right: "-1000px"
 	    		}, 500, function(){
     			//I am done happening
     			
@@ -39,7 +41,7 @@ $(document).ready(function(){
 
 	    			//animate in
 	    			$("#vidholder1").animate({
-		  				right: 0
+		  				right: "200px"
 		    		}, 500);
 		  				//add class
 		    		$("#vidholder1").addClass("vidOpen");
@@ -50,7 +52,7 @@ $(document).ready(function(){
     		} else {
 			//animate in
 				$("#vidholder1").animate({
-	  				right: 0
+	  				right: "200px"
 	    		}, 500);
 	  				//add class
 	    		$("#vidholder1").addClass("vidOpen");
@@ -63,11 +65,14 @@ $(document).ready(function(){
   $("#mapbutton2").click(function(){
 	//If it's open lets close it and get rid of the class
 
+    console.log("button 1 pressed");
+
+
 	if($("#vidholder2").hasClass("vidOpen")){
 
 		$("#vidholder2").animate({
 			//animate out
-			right: "-100px"
+			right: "-1000px"
 		}, 500);
 			//Get rid of class
 		$("#vidholder2").removeClass("vidOpen");
@@ -79,7 +84,7 @@ $(document).ready(function(){
 				
  			$("#vidholder1").animate({
     			//animate out
-    			right: "-100px"
+    			right: "-1000px"
     		}, 500, function(){
     			//I am done happening
     			
@@ -88,7 +93,7 @@ $(document).ready(function(){
 
     			//animate in
     			$("#vidholder2").animate({
-	  				right: 0
+	  				right: "200px"
 	    		}, 500);
 	  				//add class
 	    		$("#vidholder2").addClass("vidOpen");
@@ -99,7 +104,7 @@ $(document).ready(function(){
 		} else {
 			//animate in
 			$("#vidholder2").animate({
-  				right: 0
+  				right: "200px"
     		}, 500);
   				//add class
     		$("#vidholder2").addClass("vidOpen");

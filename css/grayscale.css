@@ -83,13 +83,13 @@ p {
   /*filter: blur(5px);*/
 }
 
-.vidtitle{
+/*.vidtitle{
   margin: 0 0 10px;
 }
 
 .viddescript{
   padding: 20px;
-}
+}*/
 
 .vidholder {
   /*padding: 10px;*/
@@ -130,20 +130,34 @@ p {
   padding: 0px 30px;
 }
 
+/*.videorow{
+  width: 100%;
+}*/
+
+.mapmarkers{
+  outline:0;
+}
+
+.mapmarkers:hover{
+  opacity: 0.3; 
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
 #vidholder1{
-    position: absolute;
-    /*top:205px;*/
-    right: -100px;
-    width: 100px;
-    height: 100px;
+  position: absolute;
+  /*top:205px;*/
+  right: -1000px;
+  width: 1000px;
+  height: 100px;
 }
 
 #vidholder2{
-    position: absolute;
-    /*top:205px;*/
-    right: -100px;
-    width: 100px;
-    height: 100px;
+  position: absolute;
+  /*top:205px;*/
+  right: -1000px;
+  width: 1000px;
+  height: 100px;
 }
 
 .vidOpen{
@@ -371,6 +385,7 @@ a:focus {
   }
   .vid-section {
     padding: 60px 0;
+    height: 1000px;
   }
   #map {
 /*    height: 400px;
