@@ -55,6 +55,11 @@ p {
   line-height: 1.5;
 }
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
 .icon-success {
   color: #ff00bd;
 }
@@ -93,13 +98,10 @@ p {
   margin-bottom: 60px;
 }
 
-.vertical-center {
-  /* min-height: 100%;  Fallback for browsers do NOT support vh unit */
-  /* min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
+#appvideo{
+  margin-top: 30px;
 }
+
 
 .aboutvillage{
   padding: 30px 10px;
@@ -109,8 +111,25 @@ p {
   width: 300px;
 }
 
+.nav-pills > li > a {
+    border-radius: 4px;
+    border: 2px solid rgb(255, 0, 189);
+    margin: 10px;
+}
+
+.nav-pills > li > :hover {
+    border: 2px solid white;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    border: 2px solid rgb(255, 0, 189);
+    background-color: rgb(255, 0, 189); 
+}
+
 .togglebuttonsholder{
-  margin-bottom:80px;
+  margin-top:60px;
+  margin-bottom:60px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -119,9 +138,17 @@ p {
 
 .togglebuttons{
   width:300px;
-  padding: 20px;
+  padding: 10px;
   line-height: 30px;
-  margin: 0px
+  margin: 0px;
+}
+
+.mapimage{
+  position: absolute;
+}
+
+.mapinstructions{
+  height: 770px;
 }
 
 .mapmarkers{
@@ -129,9 +156,21 @@ p {
 }
 
 .mapmarkers:hover{
-  opacity: 0.3; 
+  /*opacity: 0.3; */
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
+}
+
+#mapbutton1{
+  position: relative;
+  top: 240px;
+  left: 100px;
+}
+
+#mapbutton2{
+  position: relative;
+  top: 220px;
+  left: 150px;
 }
 
 .vidholder {
@@ -141,16 +180,16 @@ p {
 
 #vidholder1{
   position: absolute;
-  top:625px;
-  right: -1000px;
+  top:600px;
+  right: -1500px;
   width: 1000px;
   height: 100px;
 }
 
 #vidholder2{
   position: absolute;
-  top:625px;
-  right: -1000px;
+  top:600px;
+  right: -1500px;
   width: 1000px;
   height: 100px;
 }
@@ -399,7 +438,7 @@ a:focus {
     padding: 60px 0;
   }
   .vid-section {
-    padding: 60px 0;
+    padding: 0px
     height: 1000px;
   }
   #map {
