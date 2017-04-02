@@ -88,17 +88,9 @@ p {
   margin-bottom: 80px;
 }
 
-/*.vidtitle{
-  margin: 0 0 10px;
-}
 
-.viddescript{
-  padding: 20px;
-}*/
-
-.vidholder {
-  /*padding: 10px;*/
-
+.aboutnelsonvid{
+  margin-bottom: 60px;
 }
 
 .vertical-center {
@@ -117,36 +109,18 @@ p {
   width: 300px;
 }
 
-#app{
-  padding-top: 120px;
-}
-
-.img-center {
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-.worksdesc{
-  margin-top:10px;
-  margin-bottom:60px;
-}
-
-.jordandesc{
-  padding: 0px 30px;
-}
-
-/*.videorow{
-  width: 100%;
-}*/
-
 .togglebuttonsholder{
-  margin: 10px 30px
+  margin-bottom:80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 
 }
 
 .togglebuttons{
   width:300px;
-  padding: 20px 20px 20px 60px;
+  padding: 20px;
   line-height: 30px;
   margin: 0px
 }
@@ -159,6 +133,11 @@ p {
   opacity: 0.3; 
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
+}
+
+.vidholder {
+  /*padding: 10px;*/
+
 }
 
 #vidholder1{
@@ -180,6 +159,26 @@ p {
 .vidOpen{
 
 }
+
+#app{
+  padding-top: 120px;
+}
+
+.img-center {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.worksdesc{
+  margin-top:10px;
+  margin-bottom:60px;
+}
+
+.jordandesc{
+  padding: 0px 30px;
+}
+
+
 
 @media (min-width: 768px) {
   p {
