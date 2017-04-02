@@ -14,7 +14,18 @@ $(document).ready(function(){
     $("#mapbutton1").click(function(){
     	//If it's open lets close it and get rid of the class
 
-    console.log("button 1 pressed");
+        console.log("button 1 pressed");
+
+        $("#title360video").html( 
+            "<h4>HUDSON STREET: June 25th, 1989</h4>" +
+            "<p>Nelson in drag as Amnesia at the Gay Pride march.</p>"
+        );
+
+        $("#description360video").html( 
+            "<p> Nelson wanders “Gay Day” dressed as Amnesia, his drag persona. Amnesia had her hair and makeup done by Rupaul that day. Throughout the parade, Amnesia runs across a cast of characters from the worlds of nightlife, media, and fashion.</p>"
+        );
+
+      // $("#regTitle").html("Hello World");
 
     	if($("#vidholder1").hasClass("vidOpen")){
     		$("#vidholder1").animate({
@@ -41,7 +52,7 @@ $(document).ready(function(){
 
 	    			//animate in
 	    			$("#vidholder1").animate({
-		  				right: "-250px"
+		  				right: "-150px"
 		    		}, 500);
 		  				//add class
 		    		$("#vidholder1").addClass("vidOpen");
@@ -52,7 +63,7 @@ $(document).ready(function(){
     		} else {
 			//animate in
 				$("#vidholder1").animate({
-	  				right: "-250px"
+	  				right: "-150px"
 	    		}, 500);
 	  				//add class
 	    		$("#vidholder1").addClass("vidOpen");
@@ -66,6 +77,15 @@ $(document).ready(function(){
 	//If it's open lets close it and get rid of the class
 
     console.log("button 2 pressed");
+
+    $("#title360video").html( 
+        "<h4>MEMORIES AT STONEWALL: June 23rd, 1989</h4>" +
+        "<p>Nelson remembers his accidental visit during the Stonewall Riots twenty years earlier.</p>"
+    );
+
+    $("#description360video").html( 
+        "<p>During a protest march commemorating the 20th anniversary of the Stonewall Riots, Nelson runs into his friend David Noh outside the Stonewall Inn. They’re awaiting a troupe of drag queens commemorating Judy Garland, whose death occurred on the night of the riots. The queens arrive later that night with a police escort, a strong sign of progress over the 20 year preceding years –  though there was still much work to be done for queer rights.</p>"
+    );
 
 
 	if($("#vidholder2").hasClass("vidOpen")){
@@ -93,7 +113,7 @@ $(document).ready(function(){
 
     			//animate in
     			$("#vidholder2").animate({
-	  				right: "-250px"
+	  				right: "-150px"
 	    		}, 500);
 	  				//add class
 	    		$("#vidholder2").addClass("vidOpen");
@@ -104,7 +124,7 @@ $(document).ready(function(){
 		} else {
 			//animate in
 			$("#vidholder2").animate({
-  				right: "-250px"
+  				right: "-150px"
     		}, 500);
   				//add class
     		$("#vidholder2").addClass("vidOpen");

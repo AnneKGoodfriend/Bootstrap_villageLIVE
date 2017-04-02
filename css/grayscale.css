@@ -90,9 +90,8 @@ p {
 
 .logoimages{
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
-
 
 .aboutnelsonvid{
   margin-bottom: 60px;
@@ -128,8 +127,8 @@ p {
 }
 
 .togglebuttonsholder{
-  margin-top:60px;
-  margin-bottom:60px;
+  margin-top:20px;
+  margin-bottom:20px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -143,13 +142,17 @@ p {
   margin: 0px;
 }
 
+.vid-section{
+  height: 770px;
+}
+
 .mapimage{
   position: absolute;
 }
 
-.mapinstructions{
+/*.mapinstructions{
   height: 770px;
-}
+}*/
 
 .mapmarkers{
   outline:0;
@@ -173,25 +176,31 @@ p {
   left: 150px;
 }
 
-.vidholder {
-  /*padding: 10px;*/
-
+#title360video {
+  padding-top: 100px;
+  padding-left: 100px;
 }
+
 
 #vidholder1{
   position: absolute;
-  top:600px;
+  top: 240px;
   right: -1500px;
-  width: 1000px;
-  height: 100px;
+  width: 800px;
+  /*height: 100px;*/
 }
 
 #vidholder2{
   position: absolute;
-  top:600px;
+  top: 240px;
   right: -1500px;
-  width: 1000px;
-  height: 100px;
+  width: 800px;
+  /*height: 100px;*/
+}
+
+#description360video{
+  padding-left: 100px;
+  padding-top: 300px;
 }
 
 .vidOpen{
@@ -205,11 +214,6 @@ p {
 .img-center {
   margin: 0 auto;
   margin-bottom: 20px;
-}
-
-.worksdesc{
-  margin-top:10px;
-  margin-bottom:60px;
 }
 
 .jordandesc{
