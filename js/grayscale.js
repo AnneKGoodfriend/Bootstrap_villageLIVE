@@ -213,6 +213,11 @@ function init360Banner(){
 	video.muted = true;
 	
         video.play();
+
+        document.getElementById("fuck").addEventListener("click", function(e){
+            //e.preventDefault();
+            video.play();
+        });
 	
 
     //imgTex = document.createElement( 'img' );
