@@ -16,7 +16,7 @@ $(document).ready(function(){
             );
 
             $("#videospace").html( 
-                '<iframe src="https://player.vimeo.com/video/210183879?color=ff00bd&title=0&byline=0&portrait=0" width="100%" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+                '<iframe src="https://player.vimeo.com/video/210183879?color=ff00bd&title=0&byline=0&portrait=0"  width="640" height="274" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
 
             );
 
@@ -47,7 +47,7 @@ $(document).ready(function(){
             );
 
             $("#videospace").html( 
-                '<iframe src="https://player.vimeo.com/video/210704401?title=0&byline=0&portrait=0" width="100%" height="240px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+                '<iframe src="https://player.vimeo.com/video/210704401?title=0&byline=0&portrait=0"  width="640" height="274" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
 
             );
 

@@ -118,6 +118,10 @@ p {
   /*margin-bottom: 20px;*/
 }
 
+#learn{
+  padding-top: 120px;
+}
+
 .aboutnelsonvid{
   margin-bottom: 20px;
 }
@@ -133,6 +137,11 @@ p {
 
 .aboutimage{
   width: 300px;
+}
+
+.mobilelist{
+  width: 100%;
+
 }
 
 .nav-pills > li > a {

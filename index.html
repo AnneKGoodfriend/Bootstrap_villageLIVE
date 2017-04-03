@@ -143,12 +143,22 @@
         <div class="row">
             <div class="col-md-12">
 
-                <!-- Tabs -->
+                <!-- Tabs DESKTOP -->
                 <div class="row">                   
-                    <div class="togglebuttonsholder text-center">
+                    <div class="togglebuttonsholder text-center hidden-xs ">
                         <ul class="nav nav-pills">
                             <li class="active"><a data-toggle="pill" href="#home"><h3 class="togglebuttons"><span class="glyphicon glyphicon-phone"></span>  The App</h3></a></li>
                             <li><a data-toggle="pill" href="#menu1"><h3 class="togglebuttons"><span class="glyphicon glyphicon-play-circle"></span>  360 Experience</h3></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tabs MOBILE -->
+                <div class="row">                   
+                    <div class="togglebuttonsholder text-center hidden-sm hidden-md hidden-lg hidden-xl">
+                        <ul class="nav nav-pills">
+                            <li class="active mobilelist text-center"><a data-toggle="pill" href="#home"><h3 class="togglebuttons"><span class="glyphicon glyphicon-phone"></span>  The App</h3></a></li>
+                            <li class="mobilelist text-center"><a data-toggle="pill" href="#menu1"><h3 class="togglebuttons"><span class="glyphicon glyphicon-play-circle"></span>  360 Experience</h3></a></li>
                         </ul>
                     </div>
                 </div>
@@ -214,14 +224,14 @@
 
                         <!-- DESKTOP -->
                         <div class="row vid-section hidden-xs hidden-sm">
-                            <div class="col-md-5 col-md-offset-1 mapholder">
+                            <div class="col-md-5 mapholder">
                                 <img src="img/map/West_village_area_01.png" class="mapimage" alt="westvillagemap" width="500px">
 
                                 <input type="image" class="mapmarkers" id="mapbutton1" src="http://www.myiconfinder.com/uploads/iconsets/128-128-73af4456d48391a40f64a3da3ec7ab6f.png" alt="mapmarker1" height="42" width="42">
 
                                 <input type="image" class="mapmarkers" id="mapbutton2" src="http://www.myiconfinder.com/uploads/iconsets/128-128-73af4456d48391a40f64a3da3ec7ab6f.png" alt="mapmarker2" height="42" width="42">
                             </div>
-                            <div class="col-md-5 holder360video">
+                            <div class="col-md-7 holder360video">
                                 <!-- Place holder -->
                                 
                                 <div id="fadeEffect">
@@ -234,20 +244,31 @@
 
                         <!-- MOBILE -->
                         <div class="row vid-section text-center hidden-md hidden-lg hidden-xl">
-                            <div class="col-md-5 mapholder">
-                                <img src="img/map/West_village_area_01.png" class="mapimage" alt="westvillagemap" width="500px">
-
-                                <input type="image" class="mapmarkers" id="mapbutton1" src="http://www.myiconfinder.com/uploads/iconsets/128-128-73af4456d48391a40f64a3da3ec7ab6f.png" alt="Smiley face" height="42" width="42">
-
-                                <input type="image" class="mapmarkers" id="mapbutton2" src="http://www.myiconfinder.com/uploads/iconsets/128-128-73af4456d48391a40f64a3da3ec7ab6f.png" alt="Smiley face" height="42" width="42">
-                            </div>
-                            <div class="col-md-5 col-md-offset-1 holder360video">
+                            <div class="col-md-6 col-md-offset-3 text-center">
                                 <!-- Place holder -->
-                                <h4>Click on a marker to experience a memory!</h4>
-                                <div id="fadeEffect">
-                                    <div id="title360video" class="vidtitle"></div>
-                                    <div id="videospace" class="mapinstructions"> </div>
-                                    <div id="description360video"></div>
+                                <div id="title360video">
+                                    <h4><span class='glyphicon glyphicon-map-marker icon-success'></span> HUDSON STREET: June 25th, 1989</h4>
+                                    <p>Nelson in drag as Amnesia at the Gay Pride march.</p>
+                                </div>
+                                <div id="videospace"> 
+                                    <iframe src="https://player.vimeo.com/video/210183879?color=ff00bd&title=0&byline=0&portrait=0"  width="300" height="128" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                </div>
+                                <div>
+                                    <p> Nelson wanders “Gay Day” dressed as Amnesia, his drag persona. Amnesia had her hair and makeup done by Rupaul that day. Throughout the parade, Amnesia runs across a cast of characters from the worlds of nightlife, media, and fashion.</p>
+
+                                </div>
+
+                                <div id="title360video" class="vidtitle">
+                                    <h4><span class='glyphicon glyphicon-map-marker icon-success'></span> MEMORIES AT STONEWALL: June 23rd, 1989</h4>
+                                    <p>Nelson remembers his accidental visit during the Stonewall Riots twenty years earlier.</p>   
+                                </div>
+                                <div id="videospace" class="mapinstructions"> 
+                                    <iframe src="https://player.vimeo.com/video/210704401?title=0&byline=0&portrait=0"  width="300" height="128" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                                </div>
+                                <div id="description360video">
+                                    <p>During a protest march commemorating the 20th anniversary of the Stonewall Riots, Nelson runs into his friend David Noh outside the Stonewall Inn. They’re awaiting a troupe of drag queens commemorating Judy Garland, whose death occurred on the night of the riots. The queens arrive later that night with a police escort, a strong sign of progress over the 20 year preceding years –  though there was still much work to be done for queer rights.</p>
+
                                 </div>
                             </div>
                         </div>
