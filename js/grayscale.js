@@ -214,7 +214,7 @@ function init360Banner(){
 	
         video.play();
 
-        document.getElementById("fuck").addEventListener("click", function(e){
+        document.getElementById("intro").addEventListener("click", function(e){
             //e.preventDefault();
             video.play();
         });
