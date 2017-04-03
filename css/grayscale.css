@@ -36,9 +36,10 @@ h1{
   letter-spacing: 1px;
   font-size: 62px;
 }
+
+
+
 h2,
-h3,
-h4,
 h5,
 h6 {
   margin: 0 0 35px;
@@ -49,10 +50,34 @@ h6 {
   letter-spacing: 1px;
 }
 
+h3, .h3 {
+  /*margin-top: 20px;*/
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 125%;
+}
+
+h4, .h4 {
+    font-size: 18px;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+
 p {
   margin: 0 0 25px;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    /*margin-top: 15px;*/
+    /*margin-bottom: 15px;*/
 }
 
 .vertical-align {
@@ -90,11 +115,11 @@ p {
 
 .logoimages{
   margin-top: 50px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 .aboutnelsonvid{
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 #appvideo{
@@ -103,7 +128,7 @@ p {
 
 
 .aboutvillage{
-  padding: 30px 10px;
+  padding: 20px;
 }
 
 .aboutimage{
@@ -112,18 +137,20 @@ p {
 
 .nav-pills > li > a {
     border-radius: 4px;
-    border: 2px solid rgb(255, 0, 189);
+    border: 2px solid white;
     margin: 10px;
+    color: white;
 }
 
 .nav-pills > li > :hover {
     border: 2px solid white;
+    color: #5400fc;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    color: #fff;
-    border: 2px solid rgb(255, 0, 189);
-    background-color: rgb(255, 0, 189); 
+    color: #5400fc;
+    border: 2px solid white;
+    background-color: white; 
 }
 
 .togglebuttonsholder{
@@ -142,8 +169,16 @@ p {
   margin: 0px;
 }
 
+.tab-content{
+  margin-top: 40px;
+}
+
 .vid-section{
   height: 770px;
+}
+
+.mapholder{
+  height: 650px;
 }
 
 .mapimage{
@@ -176,10 +211,22 @@ p {
   left: 150px;
 }
 
-#title360video {
-  padding-top: 100px;
-  padding-left: 100px;
+.holder360video{
+  /*padding-left: 80px;*/
+  float: left;
+  padding: 50px;
+
+  -webkit-transition: 0.5s background ease;
+  -moz-transition: 0.5s background ease;
+  -o-transition: 0.5s background ease;
+  transition: 0.5s background ease;
 }
+
+#title360video {
+  padding-top: 60px;
+  /*padding-left: 80px;*/
+}
+
 
 
 #vidholder1{
@@ -199,8 +246,9 @@ p {
 }
 
 #description360video{
-  padding-left: 100px;
-  padding-top: 300px;
+  /*padding-left: 80px;*/
+  padding-top: 20px;
+  float: left;
 }
 
 .vidOpen{
@@ -214,6 +262,14 @@ p {
 .img-center {
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+#description{
+  margin-top: 30px;
+}
+
+.teammembers{
+  margin-top: 40px;
 }
 
 .jordandesc{
@@ -416,11 +472,11 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 60px;
+  padding-top: 20px;
 }
 .download-section {
   width: 100%;
-  padding: 50px 0;
+  padding-top: 20px;
   color: white;
   background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
   background-color: black;
@@ -436,14 +492,13 @@ a:focus {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 60px;
+    padding-top: 20px;
   }
   .download-section {
-    padding: 60px 0;
+    padding-top: 20px;
   }
   .vid-section {
-    padding: 0px
-    height: 1000px;
+    padding-top: 20px;
   }
   #map {
 /*    height: 400px;

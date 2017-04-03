@@ -21,6 +21,11 @@ $(document).ready(function(){
             "<p>Nelson in drag as Amnesia at the Gay Pride march.</p>"
         );
 
+        $("#videospace").html( 
+            '<iframe src="https://player.vimeo.com/video/210183879?color=ff00bd&title=0&byline=0&portrait=0" width="560" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+
+        );
+
         $("#description360video").html( 
             "<p> Nelson wanders “Gay Day” dressed as Amnesia, his drag persona. Amnesia had her hair and makeup done by Rupaul that day. Throughout the parade, Amnesia runs across a cast of characters from the worlds of nightlife, media, and fashion.</p>"
         );
@@ -81,6 +86,11 @@ $(document).ready(function(){
     $("#title360video").html( 
         "<h4>MEMORIES AT STONEWALL: June 23rd, 1989</h4>" +
         "<p>Nelson remembers his accidental visit during the Stonewall Riots twenty years earlier.</p>"
+    );
+
+    $("#videospace").html( 
+            '<iframe src="https://player.vimeo.com/video/210704401?title=0&byline=0&portrait=0" width="560" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+
     );
 
     $("#description360video").html( 
