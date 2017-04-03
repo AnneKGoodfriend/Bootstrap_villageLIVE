@@ -214,10 +214,10 @@ function init360Banner(){
 	
         video.play();
 
-        document.getElementById("intro").addEventListener("click", function(e){
-            //e.preventDefault();
-            video.play();
-        });
+        // document.getElementById("intro").addEventListener("click", function(e){
+        //     //e.preventDefault();
+        //     video.play();
+        // });
 	
 
     //imgTex = document.createElement( 'img' );
