@@ -2,27 +2,26 @@ $(document).ready(function(){
 
     var fadeLength = 250; //miliseconds
 
+    $("#pulse2").toggleClass('active');
+    $("#mapbutton2").toggleClass('active');
+
      //button 1
     $("#mapbutton1").click(function(){
     	//If it's open lets close it and get rid of the class
         console.log("button 1 pressed");
         //Here out shit is still not visible
         // Yay!
+
+        $(this).toggleClass('active');
+        $("#pulse1").toggleClass('active');
+
+
+        $("#pulse2").removeClass("active");
+        $("#mapbutton2").removeClass('active');
+
         $('#fadeEffect').fadeOut(fadeLength, function(){
 
-            $("#title360video").html( 
-                "<h4><span class='glyphicon glyphicon-map-marker icon-success'></span> HUDSON STREET: June 25th, 1989</h4>" +
-                "<p>Nelson in drag as Amnesia at the Gay Pride march.</p>"
-            );
 
-            $("#videospace").html( 
-                '<iframe src="https://player.vimeo.com/video/210183879?color=ff00bd&title=0&byline=0&portrait=0"  width="640" height="274" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
-
-            );
-
-            $("#description360video").html( 
-                "<p> Nelson wanders “Gay Day” dressed as Amnesia, his drag persona. Amnesia had her hair and makeup done by Rupaul that day. Throughout the parade, Amnesia runs across a cast of characters from the worlds of nightlife, media, and fashion.</p>"
-            );
 
         });
 
@@ -36,6 +35,12 @@ $(document).ready(function(){
     //button 2
   $("#mapbutton2").click(function(){
 	//If it's open lets close it and get rid of the class
+
+        $(this).toggleClass('active');
+        $("#pulse2").toggleClass('active');
+
+        $("#pulse1").removeClass("active");
+        $("#mapbutton1").removeClass('active');
 
         console.log("button 2 pressed");
 
