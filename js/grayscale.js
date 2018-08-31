@@ -89,7 +89,7 @@ function init360Banner(){
 	renderer = new THREE.WebGLRenderer();
 	renderer.setClearColor( 0x101010 );
 	renderer.setPixelRatio( window.devicePixelRatio );
-	renderer.setSize( window.innerWidth, window.innerHeight );
+	renderer.setSize( window.innerWidth, 740 );
 	container.appendChild( renderer.domElement );
 
     window.addEventListener( 'resize', onWindowResize, false );
